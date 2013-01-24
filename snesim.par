@@ -1,0 +1,37 @@
+                  Parameters for SNESIM
+                  ********************
+
+START OF PARAMETERS:
+nondat.dat                   - file with original data
+1  2  0  3                   - columns for x, y, z, variable
+2                            - number of categories
+0   1                        - category codes
+0.63  0.37                     - (target) global pdf
+0                          - use (target) vertical proportions (0=no,1=yes)
+vertprop.dat                 - file with target vertical proportions
+0.8                          - servosystem parameter (0=no correction)
+0                            - debugging level: 0,1,2,3
+snesim.dbg                   - debugging file
+snesim.out                         - file for simulation output
+1                            - number of realizations to generate
+250    0.5    1.0            - nx,xmn,xsiz
+250    0.5    1.0            - ny,ymn,ysiz
+1      0.5    1.0            - nz,zmn,zsiz
+5169                         - random number seed
+15                           - max number of conditioning primary data
+10                            - min. replicates number
+1   1           - 1/0 condition to soft probability, 1/0 cond.to set weights
+1.0  0.5                     - Tau1 and Tau2
+../Bestscrf2002/localprop.dat        - file of probability for soft data
+1                            - 1/0 condition for rotation and affinity
+../Bestscrf2002/angle.dat                    - file of rotation and affinity
+3                            - number of categories for affinity
+1.0  0.6  1.0
+1.0  1.0  1.0
+1.0  1.6  1.0
+5                            - number of multiple grids
+../Bestscrf2002/largetrain.dat
+250  250  1                  - training image dimensions: nxtr, nytr, nztr
+1                            - column for training variable
+100   100.0   1.0             - maximum search radii (hmax,hmin,vert)
+90.0   0.0   0.0             - angles for search ellipsoid
